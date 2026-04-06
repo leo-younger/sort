@@ -3,6 +3,7 @@ package com.sort;
 import javax.swing.plaf.basic.BasicSeparatorUI;
 import java.util.Random;
 
+import static com.sort.SwapUtils.swap;
 import static java.lang.System.currentTimeMillis;
 
 public class QuickSort {
@@ -42,16 +43,12 @@ public class QuickSort {
                 start++;
             }
             if (start < end) {
-                int temp = arr[end];
-                arr[end] = arr[start];
-                arr[start] = temp;
+                swap(arr,start,end);
             }
         }
         //5.交换两个元素
 
-            int temp = arr[start];
-            arr[start] = arr[i];
-            arr[i] = temp;
+            swap(arr,start,i);
 
         //6.递归左右两边
         quickSort(arr, i, start - 1);
