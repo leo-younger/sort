@@ -1,10 +1,8 @@
 package com.sort;
 
-import javax.swing.plaf.basic.BasicSeparatorUI;
-import java.util.Random;
 
 import static com.sort.SwapUtils.swap;
-import static java.lang.System.currentTimeMillis;
+
 
 public class QuickSort {
     //快速排序
