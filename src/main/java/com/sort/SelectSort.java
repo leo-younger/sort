@@ -8,4 +8,7 @@ public class SelectSort {
     //外循环：循环变量i，起始值为0，终止条件：<len-1；
     //内循环：循环变量j，起始值为i+1，终止条件：<len；
     //minindex:用于记录找到的最小值索引为i；
+    public static void selectSort(int[] arr){
+
+    }
 }
