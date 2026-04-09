@@ -4,12 +4,14 @@ package com.sort;
 import static com.sort.SwapUtils.swap;
 
 
+/**
+ * @author Young
+ */
 public class QuickSort {
     //快速排序
     /*首先选基准元素，然后先end找找到比基准元素小的数停止，然后从start找找到比基准元素大的数停止，
     然后交换两个元素，然后重复这个过程，直到start和end相遇，
     交换start和基准元素，然后递归左边和右边*/
-
 
 
     //1.依次取数组第一个元素，设为基准元素
@@ -41,12 +43,12 @@ public class QuickSort {
                 start++;
             }
             if (start < end) {
-                swap(arr,start,end);
+                swap(arr, start, end);
             }
         }
         //5.交换两个元素
 
-            swap(arr,start,i);
+        swap(arr, start, i);
 
         //6.递归左右两边
         quickSort(arr, i, start - 1);

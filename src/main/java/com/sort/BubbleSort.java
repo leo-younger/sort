@@ -2,6 +2,9 @@ package com.sort;
 
 import static com.sort.SwapUtils.swap;
 
+/**
+ * @author Young
+ */
 public class BubbleSort {
     //冒泡排序(从小到大)
     /*用双层for循环，外层for循环次数(固定)：循环数组数减一次；

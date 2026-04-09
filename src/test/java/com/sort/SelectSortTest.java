@@ -2,10 +2,9 @@ package com.sort;
 
 import java.util.Random;
 
-import static com.sort.SelectSort.selectSort;
 import static java.lang.System.currentTimeMillis;
 
-public class SelectSort {
+public class SelectSortTest {
     public static void main(String[] args)
         {
         int[] selectSortArr = new int[30];
@@ -20,7 +19,7 @@ public class SelectSort {
         System.out.println();
 
         long start = currentTimeMillis();
-        selectSort(selectSortArr);
+        SelectSort.selectSort(selectSortArr);
         long end = currentTimeMillis();
         System.out.println(end - start);
 
