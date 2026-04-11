@@ -21,7 +21,7 @@ public class InsertionSortTest {
         System.out.println();
 
         long start = currentTimeMillis();
-        insertionSort();
+        insertionSort(InsertionSortArr);
         long end = currentTimeMillis();
         System.out.println(end - start);
 
