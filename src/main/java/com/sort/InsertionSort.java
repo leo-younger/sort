@@ -4,12 +4,13 @@ package com.sort;
  * @author Young
  */
 public class InsertionSort {
-    /**插入排序:
-
+    /**
+     * 插入排序:
      */
-    public static void insertionSort(){
+    public static void insertionSort(int[] arr)
+        {
 
-    }
+        }
 
 
 }
