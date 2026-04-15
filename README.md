@@ -9,6 +9,7 @@ Java 实现的经典排序算法合集，持续更新
 - 快速排序(QuickSort)
 - 冒泡排序(BubbleSort)
 - 选择排序(SelectSort)
+- 插入排序(InsertionSort)
 
 ## 运行方式
 1. 使用 IDEA 打开项目
