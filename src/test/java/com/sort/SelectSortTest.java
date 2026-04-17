@@ -1,30 +1,19 @@
 package com.sort;
 
-import java.util.Random;
 
-import static java.lang.System.currentTimeMillis;
+import static com.sort.SelectSort.selectSort;
+
 
 public class SelectSortTest {
     public static void main(String[] args)
         {
-        int[] selectSortArr = new int[30];
-        Random random = new Random();
-        for (int i = 0; i < selectSortArr.length; i++) {
-            selectSortArr[i] = random.nextInt(100);
-
-        }
-        for (int k : selectSortArr) {
-            System.out.print(k + " ");
-        }
-        System.out.println();
-
-        long start = currentTimeMillis();
-        SelectSort.selectSort(selectSortArr);
-        long end = currentTimeMillis();
-        System.out.println(end - start);
-
-        for (int j : selectSortArr) {
-            System.out.print(j + " ");
-        }
+        //创建数组
+        int[] selectSortArr = SortTestUtils.createRandomArray(30,100);
+        //打印排序前数组
+        SortTestUtils.printArray(selectSortArr);
+        //对数组进行排序
+        SortTestUtils.testSort(selectSortArr, (ints)-> selectSort(ints));
+        //打印排序后的数组
+        SortTestUtils.printArray(selectSortArr);
         }
 }
